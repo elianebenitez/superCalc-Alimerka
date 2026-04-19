@@ -1,12 +1,21 @@
-import styles from './Home.module.css'
+import styles from "./Home.module.css";
+import ViewDetailsButton from "../../componentes/buttons/ViewDetailsButton/ViewDetailsButton";
 
 function Home() {
-     return(
+  return (
+    <div>
+      <section>
         <div>
-            <h1>Bienvenido a tu calculadora de la compra</h1>
-
+          <h1>Organiza tu compra</h1>
+          <p>
+            Calcula el precio total de tu compra con impuestos incluidos.
+            Gestiona tu lista de la compra de forma rápida y sencilla
+          </p>
+          <ViewDetailsButton/>
         </div>
-     )
+      </section>
+    </div>
+  );
 }
 
 export default Home;
